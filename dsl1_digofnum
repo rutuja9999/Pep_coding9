@@ -1,0 +1,30 @@
+import java.util.*;
+    
+    public class Main{
+    
+    public static void main(String[] args) {
+      // write your code here  
+      Scanner scn = new Scanner(System.in);
+      int n = scn.nextInt();
+      int temp = n;
+      int nod = 0;
+      while(temp != 0){
+          temp = temp/10;
+          nod++;
+      }
+
+      int divsor = (int)Math.pow(10, nod-1);
+      int tepp = n;
+      while(tepp != 0){
+      int quo = tepp / divsor;
+      System.out.println(quo);
+      int rem = tepp % divsor;
+      tepp = rem;
+      divsor = divsor / 10;
+
+      
+          
+      }
+
+     }
+    }
