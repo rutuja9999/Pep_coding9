@@ -15,7 +15,7 @@ import java.util.*;
 
       int divsor = (int)Math.pow(10, nod-1);
       int tepp = n;
-      while(tepp != 0){
+      while(divsor != 0){
       int quo = tepp / divsor;
       System.out.println(quo);
       int rem = tepp % divsor;
